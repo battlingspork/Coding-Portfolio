@@ -11,6 +11,7 @@
   --color-secondary: #2b312b;
   --color-accent: #d2d5dd;
   --font-body: "Fira_Sans", sans-serif;
+  margin: 0;
 }
 /* Fonts */
 H1,
@@ -148,7 +149,7 @@ nav a:hover {
   max-width: 400px;
   border-radius: 10px;
 }
-/* buttons*/
+/* buttons  */
 button {
   padding: 20px;
   font-size: 1rem;
