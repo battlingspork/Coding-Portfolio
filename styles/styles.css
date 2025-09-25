@@ -62,8 +62,9 @@ section[id] {
   flex-wrap: wrap;
 }
 .gallery .card {
-  flex: 1 250px;
-  min-height: 250px;
+  flex: 1 1 calc(33.333% - 2rem); /* three per row */
+  min-width: 250px;
+  max-width: 300px;
   background-color: var(--color-background);
   border-radius: 20px;
   padding: 1rem;
