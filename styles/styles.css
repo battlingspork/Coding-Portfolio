@@ -31,6 +31,8 @@ em {
 h2 {
   font-size: 1.25rem;
   font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 h3 {
