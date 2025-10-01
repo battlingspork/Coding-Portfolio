@@ -31,25 +31,27 @@ em {
 h2 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-accent);
-  text-decoration: underline;
+  color: var(--color-secondary);
 }
 
 h3 {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
+  color: var(--color-accent);
 }
 .name {
   display: block;
   justify-items: center;
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px var(--color-secondary),
-    -2px -2px 6px var(--color-accent);
+  font-size: 4rem;
+  color: var(--color-accent)
+  text-shadow: 1px 1px 1px var(--color-secondary), 
+  -2px -2px 3px var(--color-borders);
 }
 .subtitle {
   display: block;
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px var(--color-secondary);
+  margin-bottom: 15px;
 }
 .biopic {
   float: right;
@@ -87,16 +89,23 @@ section[id] {
 body {
   background-color: var(--color-background);
   color: var(--text-color);
-  margin: 5%;
+  margin: 0%;
   padding: 0;
   font-family: var(--font-body);
 }
-main {
-  background-color: var(--color-primary);
-  border: 2px solid var(--color-borders);
+.page {
+  margin: 0;
+  padding: 2%;
+}
+
+.frame {
+  background: var(--color-primary);
+  border: 2px solid;
+  border-color: #61304b;
   border-radius: 30px;
+}
+main {
   padding: 20px;
-  overflow: auto;
 }
 
 /* Links */
@@ -113,6 +122,14 @@ a:hover {
 }
 
 /* Navigation Bar */
+nav {
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  border-radius: 30px;
+  
+}
 nav ul {
   list-style-type: none;
   padding: 10px;
@@ -126,7 +143,7 @@ nav ul {
 nav a {
   display: inline-block;
   padding: 20px;
-  color: var(--text-color);
+  color: var(--color-accent);
   background: transparent;
   border-radius: 30px;
   line-height: 1;
@@ -142,15 +159,15 @@ nav a:active {
   text-decoration: none;
 }
 nav a:hover {
-  background: var(--color-secondary);
+  background: var(--color-accent);
   color: #ffffff;
   opacity: 80%;
   border: 2px solid var(--color-accent);
 }
 /* biobox class syling*/
 .biobox {
-  overflow: auto;
   padding: 5%;
+  border-bottom: 2px solid var(--color-borders);
 }
 .biobox img {
   float: right;
